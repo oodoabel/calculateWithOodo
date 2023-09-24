@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CALCULATE WITH OODO</title>
+    <link rel="stylesheet" href="calculateWithOodo.css">
+  </head>
+  <body>
+    <div class="allContainer">
+    
+      <div class="screen" id="showScreen">
+
+      </div>
+      <div class='operands'>
+        <p class="firstRow">
+          <button class ='B1' onclick="
+            currentValue += '1';
+            console.log(currentValue)">1</button>
+          <button class ='B2' onclick="
+            currentValue += '2';
+            console.log(currentValue)">2</button>
+          <button class ='B3' onclick="
+            currentValue += '3';
+            console.log(currentValue)">3</button>
+          <button class ='B-' onclick="
+            currentValue += ' - ';
+            console.log(currentValue)">-</button>
+          
+        </p>
+        <p class="secondRow">
+          <button class ='B4' onclick="
+            currentValue += '4';
+            console.log(currentValue)">4</button>
+          <button class ='B5' onclick="
+            currentValue += '5';
+            console.log(currentValue)">5</button>
+          <button class ='B6' onclick="
+            currentValue += '6';
+            console.log(currentValue)">6</button>
+          <button class ='B/' onclick="
+            currentValue += ' / ';
+            console.log(currentValue)">/</button>
+          
+        </p>
+        <p class="thirdRow">
+          <button class ='B7' onclick="
+            currentValue += '7';
+            console.log(currentValue)">7</button>
+          <button class ='B8' onclick="
+            currentValue += '8';
+            console.log(currentValue)">8</button>
+          <button class ='B9' onclick="
+            currentValue += '9';
+            console.log(currentValue)">9</button>
+          <button class ='B*' onclick="
+            currentValue += ' * ';
+            console.log(currentValue)">*</button>
+        </p>
+        <p>
+          <button class ='BC'  onclick="
+            currentValue = '';
+            console.log(currentValue)">C</button>
+          <button class ='B0' onclick="
+            currentValue += '0';
+            console.log(currentValue)">0</button>
+          
+          <button class ='B+' onclick="
+              currentValue += ' + ';
+              console.log(currentValue)">+</button>       
+          <button class="equals" onclick="
+            currentValue = eval(currentValue);
+            console.log(currentValue)">=</button>  
+      </div>
+      <div class="operators div">        
+        
+        \
+        </p>
+      </div>
+      
+    </div>
+    <script>
+      let currentValue = '';
+    </script>
+  </body>
+</html>
